@@ -1,16 +1,15 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
+import LogoS from '../../assets/images/logo-r.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faYoutube, faSkype} from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faHome, faUser, faFile, faBriefcase, faMicrochip} from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => (
     <div className="nav-bar">
         <Link className='logo' to='/'>
             <img src={LogoS} alt="logo" />
-            <img className="sub-logo" src={LogoSubtitle} alt="logo subtitle" />
         </Link>
         <nav>
             <NavLink exact="true" activeclassname="active" to="/">
@@ -19,8 +18,11 @@ const Sidebar = () => (
             <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            <NavLink exact="true" activeclassname="active" className="career-link" to="/career">
+                <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
+                <FontAwesomeIcon icon={faMicrochip} color="#4d4d4e" />
             </NavLink>
         </nav>
         <ul>
@@ -35,13 +37,13 @@ const Sidebar = () => (
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='https://github.com/mistry-r'>
-                    <FontAwesomeIcon icon={faYoutube} color='#4d4d4e' />
+                <a target='_blank' rel='noreferrer' href='mailto:rohan.mistry@uwaterloo.ca'>
+                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='https://github.com/mistry-r'>
-                    <FontAwesomeIcon icon={faSkype} color='#4d4d4e' />
+                <a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1yE9C2tTxnFLVGKc2lRwCnBay2tmk1BX4/view?usp=sharing'>
+                    <FontAwesomeIcon icon={faFile} color='#4d4d4e' />
                 </a>
             </li>
         </ul>
