@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import LogoTitle from '../../assets/images/logo-r.png'
+//import LogoTitle from '../../assets/images/logo-r.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo'
@@ -12,9 +12,11 @@ const Home = () => {
     const jobArray = ['b','i', 'o', 'm', 'e', 'd', 'i', 'c', 'a', 'l', ' ', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r']
 
     useEffect(() => {
-        return setTimeout(() => {
+        const timeout = setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 4000)
+
+        return () => clearTimeout(timeout)
     }, [])
 
     return (
