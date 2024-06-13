@@ -24,18 +24,7 @@
             position: absolute;
             margin-top: -40px;
             left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
+            animation: fadeInToOpacity 1s 1.7s backwards;
             opacity: 0.6;
         }
 
@@ -51,12 +40,22 @@
 
     h2 {
         color: #8d8d8d;
-        margin-top: 20px;
+        margin-top: 5px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 16px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
+
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 16px;
+            position: absolute;
+            margin-top: 50px;
+            left: 15px;
+            opacity: 0.6;
+        }
     }
 
     .flat-button {
