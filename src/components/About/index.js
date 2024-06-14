@@ -2,8 +2,12 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
+import PythonLogo from '../../assets/images/python.png'
+import CSharpLogo from '../../assets/images/c-sharp.png'
+import CPlusPlusLogo from '../../assets/images/c-.png'
+import MatalabLogo from '../../assets/images/matlab-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faGitAlt, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
@@ -47,22 +51,22 @@ const About = () => {
                 <div className='stage-cube-cont'>
                     <div className='cubespinner'>
                     <div className="face1">
-                        <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+                        <img src={PythonLogo} alt='Python Logo' className='python-logo'/>
                     </div>
                     <div className="face2">
-                        <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                        <img src={MatalabLogo} alt='MATLAB Logo' className='matlab-logo'/>
                     </div>
                     <div className="face3">
-                        <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                        <img src={CSharpLogo} alt='CSharp Logo' className='python-logo'/>
                     </div>
                     <div className="face4">
-                        <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                        <FontAwesomeIcon icon={faReact} className='python-logo' color="#5ED4F4" />
                     </div>
                     <div className="face5">
-                        <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                        <img src={CPlusPlusLogo} alt='CPlusPlus Logo' className='python-logo'/>
                     </div>
                     <div className="face6">
-                        <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                        <FontAwesomeIcon icon={faGitAlt} className='python-logo' color="#EC4D28" />
                     </div>
                     </div>
                 </div>
