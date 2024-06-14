@@ -7,7 +7,7 @@ import CSharpLogo from '../../assets/images/c-sharp.png'
 import CPlusPlusLogo from '../../assets/images/c-.png'
 import MatalabLogo from '../../assets/images/matlab-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGitAlt, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faGitAlt, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
 
