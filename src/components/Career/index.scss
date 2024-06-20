@@ -3,25 +3,22 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    overflow-y: auto; /* Ensure that the entire page can scroll */
+    overflow-y: auto;
     height: 100vh;
     box-sizing: border-box;
 
-    /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
     &::-webkit-scrollbar {
         width: 0;
         height: 0;
     }
 
-    /* Hide scrollbar for Firefox */
     scrollbar-width: none;
 
-    /* Hide scrollbar for Internet Explorer and Edge */
     -ms-overflow-style: none;
 
     .text-zone {
         text-align: center;
-        margin-bottom: 2rem; /* Ensure space below the header */
+        margin-bottom: 2rem; 
 
         h1 {
             font-size: 53px;
@@ -30,7 +27,7 @@
             font-weight: 400;
             margin-top: 0;
             position: relative;
-            left: 0; /* Ensure it is centered */
+            left: 0; 
         }
 
         .text-animate-hover {
@@ -44,7 +41,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Ensure the container takes full width */
+        width: 100%;
     }
 
     .experience-block {
@@ -62,11 +59,33 @@
     .experience-img-block {
         flex: 1;
         padding-right: 1rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
 
         img {
-            width: 100%;
             height: auto;
             border-radius: 8px;
+
+            &.novascan-image {
+                width: 80%;
+            }
+
+            &.ura-image {
+                width: 80%;
+            }
+
+            &.dalsa-image {
+                width: 100%;
+            }
+
+            &.gem-image {
+                width: 100%;
+            }
+
+            &.attorney-image {
+                width: 70%;
+            }
         }
     }
 
@@ -77,13 +96,15 @@
         justify-content: center;
 
         .experience-institution {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
+            color: #ffd700;
         }
 
         .experience-position {
-            font-size: 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
             margin-bottom: 0.5rem;
             display: flex;
             justify-content: space-between;
