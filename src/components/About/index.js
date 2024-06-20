@@ -33,18 +33,21 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        I'm a very ambitious front-end developer looking for a role in an
-                        established IT company with the opportunity to work with the latest
-                        technologies on challenging and diverse projects.
+                        I am an adept leader ready to embrace the medical world from an engineering 
+                        and biological standpoint. I will be working diligently over the course 
+                        of my degree to build a solid and plethoric skillset to effectively embrace 
+                        the medical industry as a biomedical engineer.
                     </p>
                     <p align="LEFT">
-                        I'm quiet confident, naturally curious, and perpetually working on
-                        improving my chops one design problem at a time.
+                        My professional journey has involved working at Teledyne DALSA as a 2D image sensor test and
+                        image processing developer, and as an undergraduate research assistant at the University of Waterloo 
+                        focusing on gait optimization. More recentlt, I am working at NovaScan as a Data Analyst intern to create
+                        machine learning solutions to enhance cancer detection.
                     </p>
                     <p>
-                        If I need to define myself in one sentence that would be a family
-                        person, father of a beautiful daughter, a sports fanatic,
-                        photography enthusiast, and tech-obsessed!!!
+                        Beyond academia and work, my passions lie in medical AI, medical imaging, and neural engineering. 
+                        These fields fascinate me for their potential to revolutionize healthcare through innovation and 
+                        technology.
                     </p>
                 </div>
 
