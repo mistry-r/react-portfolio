@@ -6,6 +6,7 @@
     overflow-y: auto;
     height: 100vh;
     box-sizing: border-box;
+    padding-left: calc(65px + 20px);
 
     &::-webkit-scrollbar {
         width: 0;
@@ -13,12 +14,11 @@
     }
 
     scrollbar-width: none;
-
     -ms-overflow-style: none;
 
     .text-zone {
         text-align: center;
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
 
         h1 {
             font-size: 53px;
@@ -27,7 +27,7 @@
             font-weight: 400;
             margin-top: 0;
             position: relative;
-            left: 0; 
+            left: 0;
         }
 
         .text-animate-hover {
@@ -117,6 +117,53 @@
 
                 li {
                     margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .text-zone {
+            margin-bottom: 1rem;
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+
+        .experience-block {
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .experience-img-block {
+            padding-right: 0;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+
+            img {
+                width: 100%;
+                max-width: 50%;
+            }
+        }
+
+        .experience-text-block {
+            .experience-institution {
+                font-size: 0.9rem; 
+            }
+
+            .experience-position {
+                font-size: 0.9rem; 
+            }
+
+            .experience-body {
+                font-size: 0.9rem;
+                ul {
+                    padding-left: 15px;
+
+                    li {
+                        margin-bottom: 0.3rem;
+                    }
                 }
             }
         }
