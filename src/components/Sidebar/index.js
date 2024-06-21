@@ -3,14 +3,14 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-r.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faHome, faUser, faFile, faBriefcase, faMicrochip} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faFile, faBriefcase} from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => (
     <div className="nav-bar">
         <Link className='logo' to='/'>
             <img src={LogoS} alt="logo" />
         </Link>
-        <nav>
+        <nav className='nav-bar-main-elements'>
             <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
@@ -20,9 +20,9 @@ const Sidebar = () => (
             <NavLink exact="true" activeclassname="active" className="career-link" to="/career">
                 <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
+            { /*<NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
                 <FontAwesomeIcon icon={faMicrochip} color="#4d4d4e" />
-            </NavLink>
+            </NavLink> */}
         </nav>
         <ul>
             <li>
@@ -41,7 +41,7 @@ const Sidebar = () => (
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='https://drive.google.com/file/d/1yE9C2tTxnFLVGKc2lRwCnBay2tmk1BX4/view?usp=sharing'>
+                <a target='_blank' rel='noreferrer' href='https://rohanmistryresume.tiiny.site'>
                     <FontAwesomeIcon icon={faFile} color='#4d4d4e' />
                 </a>
             </li>
