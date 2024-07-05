@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-//import { Link } from 'react-router-dom';
-//import LogoTitle from '../../assets/images/logo-r.png'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo'
@@ -55,6 +53,8 @@ const Home = () => {
                             repeat={Infinity}
                         />
                     </h2>
+                    {/* Optional button or link */}
+                    {/* <Link to="/about" className="flat-button">Learn more</Link> */}
                 </div>
                 <Logo />
             </div>
