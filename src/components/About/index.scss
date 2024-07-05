@@ -90,3 +90,11 @@
       transform: rotateX(90deg);
     }
   }
+
+  @media (max-width: 768px) {
+    .text-zone {
+      h1 {
+        font-size: 10px;
+      }
+    }
+  }

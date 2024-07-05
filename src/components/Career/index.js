@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import NovaScanImage from '../../assets/images/novascan.png'
 import UraImage from '../../assets/images/uw.png'
 import DalsaImage from '../../assets/images/tdalsa.png'
+import IgemImage from '../../assets/images/iGEM.png'
 import GemImage from '../../assets/images/gem.png'
 import AttorneyImage from '../../assets/images/omat.png'
 
@@ -36,7 +37,7 @@ const Career = () => {
         },
         {
             position: 'Undergraduate Research Assistant',
-            company: 'University of Waterloo \u00B7 Contract Part-time',
+            company: 'University of Waterloo \u00B7 Part-time',
             location: 'Waterloo, ON',
             date: 'Jan 2024 - Apr 2024',
             description: [
@@ -62,6 +63,19 @@ const Career = () => {
             ],
             image: DalsaImage,
             imageClass: 'dalsa-image'
+        },
+        {
+            position: 'Math and Modelling Team Member and Lead',
+            company: 'Waterloo iGEM \u00B7 Design Team',
+            location: 'Waterloo, ON',
+            date: 'Feb 2022 - Dec 2023',
+            description: [
+                'Led a team through the iterative engineering design process to model the bacterial dynamics, viral dynamics, plant health and susceptibility, and RNAi mechanism solution for TSWV in tomato plants.',
+                'Mentored team members to enhance technical proficiency in programming and modelling techniques including ODEs, hill functions, quantification, bioinformatics, genome engineering.',
+                'Derived mathematical equations from scholarly articles to develop a model for the terpene precursors in the mevalonate (MVA) pathway to terpene production',
+            ],
+            image: IgemImage,
+            imageClass: 'novascan-image'
         },
         {
             position: 'Software Developer and Medical Technician',
