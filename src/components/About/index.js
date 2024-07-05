@@ -38,10 +38,10 @@ const About = () => {
                         of my degree to build a solid and plethoric skillset to effectively embrace 
                         the medical industry as a biomedical engineer.
                     </p>
-                    <p align="LEFT">
+                    <p>
                         My professional journey has involved working at Teledyne DALSA as a 2D image sensor test and
                         image processing developer, and as an undergraduate research assistant at the University of Waterloo 
-                        focusing on gait optimization. More recentlt, I am working at NovaScan as a Data Analyst intern to create
+                        focusing on gait optimization. More recently, I am working at NovaScan as a Data Analyst intern to create
                         machine learning solutions to enhance cancer detection.
                     </p>
                     <p>
