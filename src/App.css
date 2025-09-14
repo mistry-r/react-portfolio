@@ -1,0 +1,198 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+/* Home Page */
+.home-container {
+  padding: 4rem 2rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.profile-pic {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.right {
+  text-align: left;
+}
+
+.right h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.right h2 {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.right p {
+  margin: 0.3rem 0 1rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto; /* pushes footer to bottom */
+  padding: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.footer-links a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Career Page */
+.career-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.career-item {
+  background-color: #f5f5f5;
+  border-radius: 12px;       
+  padding: 1.5rem;
+  margin-bottom: 2rem;       
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.career-item-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.career-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.career-text {
+  flex: 1;
+}
+
+.career-text h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.career-text p {
+  margin: 0.2rem 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.career-meta {
+  text-align: right;
+  margin-left: auto; /* pushes it to the far right */
+}
+
+.career-meta h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.career-meta p {
+  margin: 0.2rem 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column; /* stack image and text */
+    text-align: center;
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .career-item-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .career-item img {
+    margin-bottom: 1rem;
+  }
+  
+  .career-meta {
+    text-align: center;  /* override right align */
+    margin-left: 0;      /* reset auto margin */
+  }
+}

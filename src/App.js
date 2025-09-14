@@ -1,23 +1,22 @@
-import './App.scss';
-import { Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import Home from './components/Home'
-import About from './components/About'
-import Career from './components/Career'
-import Projects from './components/Projects'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Career from "./pages/Career";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="career" element={<Career />} />
-        <Route path="projects" element={<Projects />} />
-      </Route>
-    </Routes>
-    </>
+    <Router>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/career" element={<Career />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
