@@ -1,5 +1,8 @@
 {
   "projects": {
     "default": "rohan-s-personal-website"
-  }
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
